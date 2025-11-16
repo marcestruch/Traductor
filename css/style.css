@@ -1,0 +1,40 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Clash';
+    src: url(/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf);
+    font-weight: 500;
+}
+
+:root{
+  --color-primario: #007bff; /* Un azul vibrante */
+  --color-secundario: #6c757d; /* Un gris azulado */
+  --color-texto-claro: #f8f9fa; /* Texto en fondos claros */
+  --color-texto-oscuro: #212529; /* Texto en fondos oscuros */
+  --color-fondo-claro: #ffffff; /* Fondo blanco o muy claro */
+  --color-fondo-oscuro: #343a40; /* Fondo gris oscuro */
+  --color-borde: #dee2e6; /* Color de borde sutil */
+  --color-enlace-hover: #0056b3; /* Color de enlace al pasar el ratón */
+    size: 16px;
+}
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: Clash, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-primario);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--color-fondo-claro);
+    min-height: 100vh;
+}
+.container em.mini{
+font-size:1.2rem;
+}
