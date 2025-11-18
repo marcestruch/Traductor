@@ -96,4 +96,6 @@ select{
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid var(--color-borde);
+    font-size: 14px;
+    color: var(--color-primario)
 }
