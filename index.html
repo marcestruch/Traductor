@@ -22,7 +22,6 @@
         <section class="language-selection">
             <div class="source-language">
                 <select id="sourceLanguage">
-                    <option value="auto">Auto</option>
                     <option value="en">Ingles</option>
                     <option value="es">Español</option>
                     <option value="fr">Frances</option>
@@ -41,7 +40,6 @@
             </button>
             <div class="target-language">
                 <select id="targetLanguage">
-                    <option value="auto">Auto</option>
                     <option value="en">Ingles</option>
                     <option value="es">Español</option>
                     <option value="fr">Frances</option>
@@ -63,18 +61,38 @@
                     placeholder="Introduce el texto"
                     maxlength="5000"
                     ></textarea>
-                    <!-- button para borrar contenido -->
+                    <button class="clear-button" id="clearButton" style="display: none;">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
                 </div>
                 <footer class="input-controls">
                     <button class="icon-button mic-but" id="micButton">
-                        <span class="material-symbols-outlined">
-                            <!-- 25:48 -->
-                        </span>
+                        <span class="material-symbols-outlined">mic</span>
+                    </button>
+                    <div class="char-count">0 / 5000</div>
+                </footer>
+            </section>
+            
+            <section class="output-section">
+                <div class="textarea-container">
+                    <textarea 
+                    id="outputText"
+                    readonly
+                    placeholder="Traducción"
+                    ></textarea>
+                </div>
+                <footer class="output-controls">
+                    <button class="icon-button" id="copyButton" title="Copiar traducción">
+                        <span class="material-symbols-outlined">content_copy</span>
+                    </button>
+                    <button class="icon-button" id="speakButton" title="Escuchar traducción">
+                        <span class="material-symbols-outlined">volume_up</span>
                     </button>
                 </footer>
             </section>
         </main>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
